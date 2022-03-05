@@ -1,0 +1,23 @@
+{
+  "name": "chalk-color-style",
+  "version": "0.1.0",
+  "description": "Color Style For Chalk",
+  "main": "chalkcolor.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amiralariska/chalk-color-style"
+  },
+  "keywords": [
+    "chalk-color-style",
+    "color-style",
+    "chalk"
+  ],
+  "author": "Amiral Ariska",
+  "bugs": {
+    "url": "https://github.com/amiralariska/chalk-color-style/issues"
+  },
+  "homepage": "https://github.com/amiralariska/chalk-color-style#readme",
+  "dependencies": {
+    "chalk": "^4.1.1"
+  }
+}
