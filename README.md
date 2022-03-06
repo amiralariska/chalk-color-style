@@ -17,13 +17,18 @@ chalkcolor.done();
 ## Custom text `console.log`
 ```javascript
 var chalkcolor = require('chalk-color-style');
-chalkcolor.log(`${chalkcolor.blankdone()} Creating new html file done`);
+chalkcolor.log(`
+${chalkcolor.blankdone()} Creating new html file done
+`);
 ```
 or
 ```javascript
 var chalk = require('chalk');
 var chalkcolor = require('chalk-color-style');
-chalkcolor.log(`${chalkcolor.blankdone()} ${chalk.hex('#0f0')('Creating new html file done')}`);
+chalkcolor.log(`
+${chalkcolor.blankdone()} 
+${chalk.hex('#0f0')('Creating new html file done')}
+`);
 ```
 ## API
 ### chalkcolor.`<function>(string)`
