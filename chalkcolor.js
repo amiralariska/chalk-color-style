@@ -35,7 +35,7 @@ function blankinfo(){
 }
 // custom console.log
 const log = console.log;
-// export function
+// export function and const
 module.exports = {
     done,
     failed,
