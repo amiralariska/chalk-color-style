@@ -1,6 +1,6 @@
 {
   "name": "chalk-color-style",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Color Style For Chalk",
   "main": "chalkcolor.js",
   "repository": {
