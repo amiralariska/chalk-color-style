@@ -4,7 +4,7 @@ var chalk = require("chalk");
  * Create A Done Color
  * @type {done} create a done color
  */
-function done() {
+function done(){
     var completed = chalk.hex("#fff").bgHex("#0f0")("\xa0DONE\xa0");
     console.log(`${completed} Creating project done`);
 }
@@ -12,7 +12,7 @@ function done() {
  * Create A Failed Color
  * @type {failed} create a failed color
  */
-function failed() {
+function failed(){
     var error = chalk.hex("#fff").bgHex("#f00")("\xa0FAILED\xa0");
     console.log(`${error} Failed creating project`);
 }
@@ -20,7 +20,7 @@ function failed() {
  * Create A Warning Color
  * @type {warning} create a warning color
  */
-function warning() {
+function warning(){
     var warned = chalk.hex("#fff").bgHex("#ff0")("\xa0WARNING\xa0");
     console.log(`${warned} Your project is not created`);
 }
@@ -28,7 +28,7 @@ function warning() {
  * Create A Info Color
  * @type {info} create a info color
  */
-function info() {
+function info(){
     var info = chalk.hex("#fff").bgHex("#00f")("\xa0INFO\xa0");
     console.log(`${info} Please info if your project is done`);
 }
@@ -37,7 +37,7 @@ function info() {
  * Create A Blank Done Color
  * @type {blankdone} create a blank done color
  */
-function blankdone() {
+function blankdone(){
     var completedgreen = chalk.hex("#fff").bgHex("#0f0")("\xa0DONE\xa0");
     return completedgreen;
 }
@@ -45,7 +45,7 @@ function blankdone() {
  * Create A Blank Failed Color
  * @type {blankfailed} create a blank failed color
  */
-function blankfailed() {
+function blankfailed(){
     var errorred = chalk.hex("#fff").bgHex("#f00")("\xa0FAILED\xa0");
     return errorred;
 }
@@ -53,7 +53,7 @@ function blankfailed() {
  * Create A Blank Warning Color
  * @type {blankwarning} create a blank warning color
  */
-function blankwarning() {
+function blankwarning(){
     var warnedyellow = chalk.hex("#fff").bgHex("#ff0")("\xa0WARNING\xa0");
     return warnedyellow;
 }
@@ -61,7 +61,7 @@ function blankwarning() {
  * Create A Blank Info Color
  * @type {blankinfo} create a blank info color
  */
-function blankinfo() {
+function blankinfo(){
     var infoblue = chalk.hex("#fff").bgHex("#00f")("\xa0INFO\xa0");
     return infoblue;
 }
@@ -300,22 +300,29 @@ const bgmagentabright = chalk.bgHex("#b1009c");
 const bgcyanbright = chalk.bgHex("#5fd2d2");
 // export function and const
 module.exports = {
+    // color style
+    /* custom blank color style */
     done, failed, warning, info,
+    /* custom blank color style */
     blankdone, blankfailed, blankwarning, blankinfo,
     // hex and rgb
     hex, bghex, rgb, bgrgb,
     // text style
     bold, dim, underline, inverse,
     // text color
+    /* text default color */
     white, black, gray, red, green,
-    blue, yellow, magenta, cyan, /* text bright color */ whitebright, 
-    blackbright, graybright, redbright, greenbright, bluebright,
+    blue, yellow, magenta, cyan,
+    /* text bright color */
+    whitebright, blackbright, graybright, redbright, greenbright, bluebright,
     yellowbright, magentabright, cyanbright,
     // text background color
+    /* text default color */
     bgwhite, bgblack, bggray, bgred, bggreen,
-    bgblue, bgyellow, bgmagenta, bgcyan, /* text bright color */ bgwhitebright,
-    bgblackbright, bggraybright, bgredbright, bgbluebright, bggreenbright,
-    bgyellowbright, bgmagentabright, bgcyanbright,
+    bgblue, bgyellow, bgmagenta, bgcyan,
+    /* text bright color */
+    bgwhitebright, bgblackbright, bggraybright, bgredbright, bgbluebright,
+    bggreenbright, bgyellowbright, bgmagentabright, bgcyanbright,
     // console.log
     log
 };
